@@ -1,0 +1,190 @@
+/*
+ * ####################################################3
+ * Bootstrap Overrides
+ * ####################################################3
+ */
+
+.carousel{
+    border: 1px solid var(--cupra-copper);
+    border-radius: 5px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  font-size: 20px;
+}
+
+.card-body{
+    color: var(--cp-primary-fg);
+}
+
+
+/*
+ * ####################################################3
+ * Bootstrap custom styles 
+ * ####################################################3
+ */
+
+.carousel-crop{
+    /* Crop image inside a carousel and apply
+     * eye candy effects
+     */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 100% 0;
+    filter: blur(1px) brightness(30%);
+    -webkit-filter: blur(1px) brightness(30%);
+}
+
+.card-img {
+  object-fit: cover;
+  max-height: 300px;
+  width: 100%;
+  display: block;
+}
+
+.MuiDropzoneArea-root {
+  min-height: 280px!important;
+}
+
+.MuiDropzoneArea-textContainer {
+  color: black;
+}
+
+
+/*
+ * ####################################################3
+ * Sweet Alert Pop-up
+ * ####################################################3
+ */
+
+ /*
+.swal-modal {
+  background-color: var(--cp-dark-black);
+  border: 1px solid var(--cp-oxygen-white);
+}
+
+.swal-text {
+  text-align: center;
+  font-size: 14px;
+  color:var(--cp-oxygen-white);
+}
+
+.swal-title {
+  margin: 0px;
+  font-size: 24px;
+  color:var(--cp-oxygen-white);
+  margin-bottom: 28px;
+}
+
+.swal-footer {
+    background-color: var(--cp-dark-black);
+    margin-top: 32px;
+    overflow: hidden;
+}
+
+.swal-button {
+
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: var(--cp-cupra-copper);
+  font-size: 14px;
+}
+
+*/
+
+.swal-content__input{
+    color: #000000;
+}
+
+.swal-confirm-danger {
+  background-color: var(--cp-dark-peacock) !important;
+  border: 1px solid var(--cp-dark-peacock) !important;
+}
+
+.swal-confirm-danger:hover {
+  background-color: var(--cp-light-candy-red) !important;
+  border: 1px solid var(--cp-light-candy-red) !important;
+}
+
+.swal-confirm {
+  background-color: var(--cp-dark-peacock) !important;
+  border: 1px solid var(--cp-dark-peacock) !important;
+}
+
+.swal-confirm:hover {
+  background-color: rgb(63,165,39) !important;
+  border: 1px solid rgb(63,165,39) !important;
+}
+
+/*
+########################################################################
+Overrides for the dropzone area
+########################################################################
+*/
+.MuiDropzoneArea-root {
+  min-height: 208px !important;
+  background-color: #202529 !important;
+}
+
+.MuiDropzoneArea-icon {
+  color: var(--engine-grey) !important;
+}
+
+.MuiDropzoneArea-text {
+  color: var(--engine-grey) !important;
+}
+/*
+########################################################################
+Overrides for the datepicker
+########################################################################
+*/
+.react-datepicker__input-container > input {
+    height: 58px;
+    max-width: 150px;
+    background-color: #202529;
+    padding: 10px;
+    border: 0px;
+}
+
+/*
+########################################################################
+Overrides for the Bootstrap tabs
+########################################################################
+*/
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border-bottom: var(--cp-oxygen-white) solid !important;
+  color: var(--cp-oxygen-white);
+
+}
+
+.nav-link {
+  color: var(--engine-grey);
+}
+
+.nav-tabs .nav-link {
+  margin-bottom: calc(var(--bs-nav-tabs-border-width) * -1);
+  border-bottom: var(--engine-grey) solid !important;
+  background: 0 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px ;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: var(--cp-cupra-copper);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: var(--cp-cupra-copper) solid !important;
+  border-bottom: 0px;
+}
+
+/*
+########################################################################
+Overrides for the react select
+########################################################################
+*/
+.css-nnzyhz-singleValue{
+  color: var(--cp-oxygen-white) !important;
+}

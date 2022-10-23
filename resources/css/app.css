@@ -1,0 +1,98 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import '_variables.css';
+@import 'cupra.css';
+@import 'calendarv2.css';
+@import 'bootstrap-overrides.css';
+
+
+/*
+################################################################
+Global style
+################################################################
+ */
+
+:root{
+    color-scheme: dark;
+}
+
+
+
+
+.highlight{
+    font-weight: 900 !important;
+    color: var(--cupra-copper) !important;
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.link::before {
+    background-color: #54b3d6;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+}
+
+.link:hover::before,
+.link:focus::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+
+.link:hover::before,
+.link:focus::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+
+/*
+################################################################
+Global behavious
+################################################################
+ */
+
+.overlay {
+    z-index: 10000;
+}
+
+::-webkit-file-upload-button {
+    background: var(--cupra-copper);
+    color: var(--oxygen-white);
+    padding: 1em;
+  }
+
+  
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;   
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;    
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;    
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+

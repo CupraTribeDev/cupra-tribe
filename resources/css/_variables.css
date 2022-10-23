@@ -1,0 +1,62 @@
+/*
+################################################################
+Variables
+################################################################
+ */
+
+:root{
+
+
+    /* style */
+    --radius: 6px;
+    --radius-l: 10px;
+    --radius-xl: 15px;
+
+    --primary-font: Cupra Regular;
+
+    /* Colors */
+    --transparent: #0000;
+    --black: #262524;
+    --grey: #a4b2bc;
+    --white: #fff;
+
+    /* Cupra Colors */
+    --cp-cupra-copper: #95572B;
+    --cp-cupra-copper-pantone: #C1935E;
+
+    --cp-cupra-petrol: #003e51;
+    --cp-cupra-petrol-pantone: #003D51;
+    --cp-dark-cupra-petrol: #092128;
+
+    --cp-oxygen-white: #f8f8f8;
+
+    --cp-desert-sand: #D9CEBD;
+    --cp-rejiche-sand: #FFF2DE;
+
+    --cp-pitch-black: #000;
+    --cp-darker-black: #0D0D0D;
+    --cp-dark-black: #141414;
+    --cp-light-black: 28,28,28;
+
+    --cp-engine-gray: #75787b;
+
+    --cp-dark-peacock: #045c55;
+
+    --cp-pastel-pink: #8E234E;
+
+    --cp-candy-red: #A4030A;
+    --cp-light-candy-red: #FF3E47;
+    --cp-blue-electric: #7EB9C7;
+
+
+    /*OBSOLETE*/
+    --cupra-red: #8e234e;
+    --engine-grey: #75787b;
+    --dark-black: #16151F;
+    --font: Arial;
+}
+
+@font-face {
+    font-family: "Cupra Regular";
+    src: url("../fonts/cupra/woff/Cupra-Regular.woff") format('woff');
+}
